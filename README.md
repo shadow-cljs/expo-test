@@ -4,8 +4,10 @@ Consider this a pre-alpha Work in Progress. The goal here is to use `react-nativ
 
 For this demo you'll need to have an actual Android or iOS device with the Expo app installed. The emulator does not work yet.
 
+First clone and install `shadow-cljs`.
+
 ```
-git clone ...
+git clone https://github.com/shadow-cljs/expo-test.git
 cd expo-test
 npm install
 ```
