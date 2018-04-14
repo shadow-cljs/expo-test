@@ -1,0 +1,30 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src"]
+
+ :dependencies
+ []
+
+ :builds
+ {:ios
+  {:target :expo
+   :init-fn demo.expo/init
+   :platform "ios"
+   :expo-root "DemoApp"
+   :output-dir "DemoApp/out-ios"
+   :devtools
+   {:http-port 18000
+    :http-root "DemoApp/out-ios"
+    :http-handler shadow.expo/serve}}
+
+  :android
+  {:target :expo
+   :init-fn demo.expo/init
+   :platform "android"
+   :expo-root "DemoApp"
+   :output-dir "DemoApp/out-android"
+   :devtools
+   {:http-port 18001
+    :http-root "DemoApp/out-android"
+    :http-handler shadow.expo/serve}}
+  }}
